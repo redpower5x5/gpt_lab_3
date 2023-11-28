@@ -1,7 +1,7 @@
 import streamlit as st
 from gptModel import MyModel
 
-def short_text(model: MyModel):
+def long_text(model: MyModel):
     st.title("Генерация длинного текста")
     st.write("Введите начало текста, а модель вам поможет продолжить. Продолжение будет длинным")
     input_text = st.text_area("Введите текст", height=100, key='1', max_chars=200)
